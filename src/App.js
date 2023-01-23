@@ -36,7 +36,7 @@ function App() {
         {tasks.map((task, index) => {
           return (
             <div key={index} className="container mt-10 flex justify-start items-center bg-white shadow-md px-4 rounded-lg  relative">
-              <input type="checkbox" checked={task.completed} onChange={() => handleComplete(index)} className="absolute left-[.5rem] top-0 bottom-0 w-[2rem]" />
+              <input type="checkbox" checked={task.completed} onChange={() => handleComplete(index)} className="absolute left-[.5rem] top-0 bottom-0 w-[2rem] cursor-pointer" />
               <h2
                 style={{
                   textDecoration: task.completed ? "line-through" : "none",
